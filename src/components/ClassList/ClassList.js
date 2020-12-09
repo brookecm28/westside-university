@@ -19,8 +19,8 @@ export default class ClassList extends Component {
 
   render() {
     const students = this.state.students.map((student, i) => (
-      <Link to={`/student/${i}`}>
-        <h3 key={i} >{student.first_name} {student.last_name}</h3>
+      <Link to={`/student/${student.id}`} key={i}>
+        <h3  >{student.first_name} {student.last_name}</h3>
       </Link>
     ))
 
